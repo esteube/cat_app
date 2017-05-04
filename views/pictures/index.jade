@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+  h1 Picture Feed
+
+  ul
+
+  li(class="newPhoto")
+    a(href='/pictures/new') Add a New Photo
+
+  li(class="userSettings")
+    a(href="/users/index") User Settings
+
+  li(class="logout")
+    a(href="") Log Out
+
+  ul
+    each catPicture in catPictures
+      li
+        div
+          img(src="/pictures/#{catPicture._id}/photo")
+          div
+            p= catPicture.caption

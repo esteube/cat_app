@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+  h1 Upload Your Pet!
+
+  ul
+
+  li(class="logout")
+    a(href="/") Return Home
+
+  li(class="logout")
+    a(href="/logout") Log Out
+
+
+  form(action="/pictures" method="post" enctype="multipart/form-data")
+    div(class="caption")
+    input(type="text" name="caption" placeholder="Caption")
+
+    div(class="image")
+    input(type="file" name="image")
+
+    div
+    button(type="submit") Save

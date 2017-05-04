@@ -1,0 +1,26 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+li {
+  display: inline-block;
+  float: none;
+  list-style-type: none;
+
+}
+li.newPhoto, li.userSettings, li.logout, li.login {
+  margin-left: 10px;
+}
+
+a {
+  color: #00B7FF;
+}
+div.caption, div.image {
+  margin-top: 5px;
+}
+
+.main-img {
+  width: 500px;
+  height: auto;
+}
